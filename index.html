@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, shrink-to-fit=no, width=device-width">
+        <title>EVOX Consulting</title>
+        <meta name="author" content="EVOX Consulting">
+        <meta name="description" content="Responsive web design, development, hosting, and management!">
+        <meta name="keywords" content="web design, web development, web hosting, web design and development, website design, website hosting, private hosting, private server, VPS, dedicated hosting, dedicated server, EVOX Consulting, EVOX web solutions, EVOX, web solutions, web services, domain name, email, laa, network, discount">
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel=stylesheet>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel=stylesheet>
+        <link rel="stylesheet" type="text/css" href="assets/css/uikit.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/hint.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <!-- <script src="assets/js/analytics.js"></script> -->
+    </head>
+    <body>
+        <div id="clientLogin" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <h3 class="uk-heading-divider">Login</h3>
+                <p>Login to access your service information and account history.</p>
+                <form class="uk-form-stacked" action="" method="post">
+                    <div class="uk-margin-bottom">
+                        <label class="uk-form-label">Username/Email</label>
+                        <div class="uk-margin-small">
+                            <div class="uk-form-controls">
+                                <div class="uk-inline uk-width-1-1">
+                                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                    <input class="uk-input uk-border-pill" id="userUsername" type="text" placeholder="Username or Email">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <label class="uk-form-label">Password</label>
+                        <div class="uk-margin-small-bottom">
+                            <div class="uk-form-controls">
+                                <div class="uk-inline uk-width-1-1">
+                                    <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                    <input class="uk-input uk-border-pill" id="userPassword" type="password" placeholder="Password">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-inline uk-width-1-1 uk-margin-small-bottom">
+                        <button type="button" class="uk-button uk-button-primary uk-border-pill" onclick="UIkit.notification({message: 'Unauthorized Login!'})">Login</button>
+                    </div>
+                </form>
+		<div class="">                    
+		    <div class="uk-text-center">
+                        <a class="uk-link-reset uk-text-small" data-uk-toggle="target: #recover;animation: uk-animation-slide-top-small">Forgot your password?</a>
+                    </div>
+                    <div class="uk-margin-small-top" id="recover" hidden>
+                        <form action="">
+                            <label class="uk-form-label">Email Address</label>
+                            <div class="uk-margin-small">
+                                <div class="uk-inline uk-width-1-1">
+                                    <span class="uk-form-icon" data-uk-icon="icon: mail"></span>
+                                    <input class="uk-input uk-border-pill" placeholder="E-mail" required type="text">
+                                </div>
+                            </div>
+                            <div class="uk-margin-top">
+                                <div class="uk-inline uk-width-1-1">
+                                    <button type="button" class="uk-button uk-button-primary uk-border-pill" onclick="UIkit.notification({message: 'Password Reset!'})">Reset Password</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-offcanvas-content">
+            <div id="main-menu-offcanvas" uk-offcanvas="flip: true;">
+                <div class="uk-offcanvas-bar">
+                  <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <div class="uk-panel">
+                        <ul class="uk-nav uk-nav-default uk-padding-small">
+                            <li class="uk-navbar-item"><a href="#" uk-scroll>Home</a></li>
+                            <li class="uk-navbar-item"><a href="#features" uk-scroll>Features</a></li>
+                            <li class="uk-navbar-item"><a href="#faq" uk-scroll>FAQ</a></li>
+                            <li class="uk-navbar-item"><a href="#contact" uk-scroll>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div id="main-menu-offcanvas-social" class="uk-padding-small">
+                        <a href="http://facebook.com/" target="_blank" class="uk-icon-button uk-margin-small-right social-facebook-color" uk-icon="icon: facebook"></a>
+                        <a href="http://twitter.com/" target="_blank" class="uk-icon-button uk-margin-small-right social-twitter-color" uk-icon="icon: twitter"></a>
+                        <a href="http://instagram.com/" target="_blank" class="uk-icon-button uk-margin-small-right social-instagram-color" uk-icon="icon: instagram"></a>
+                        <a href="http://youtube.com/" target="_blank" class="uk-icon-button social-youtube-color" uk-icon="icon: youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header id="header" class="header header--fixed" role="banner">
+            <nav class="uk-container" role="navigation" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="/" class="uk-logo">
+                        <img src="assets/images/logo.png" alt="EVOX Consulting" id="logo">
+                    </a>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        <li class="uk-navbar-item"><a href="#" uk-scroll>Home</a></li>
+                        <li class="uk-navbar-item"><a href="#features" uk-scroll>Features</a></li>
+                        <li class="uk-navbar-item"><a href="#faq" uk-scroll>FAQ</a></li>
+                        <li class="uk-navbar-item"><a href="#contact" uk-scroll>Contact</a></li>
+                    </ul>
+                    <ul class="uk-navbar-nav uk-margin-small-left uk-margin-small-right">
+                        <li class="uk-navbar-item hint--bottom" aria-label="Login"><a href="#clientLogin" uk-toggle class="uk-icon-button" uk-icon="user"></a></li>
+                    </ul>
+                    <ul class="uk-navbar-nav uk-hidden@m">
+                        <li class="uk-navbar-item">
+                            <a class="uk-navbar-toggle" href="#main-menu-offcanvas" uk-toggle>
+                                <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left uk-visible@s">Menu</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="main-body" role="main">
+            <div class="uk-section uk-section-primary uk-section-small" id="intro">
+                <div class="uk-container">
+                    <div class="uk-grid-match uk-grid-medium uk-text-center" uk-grid>
+                        <div class="uk-width-2-3@m">
+                            <div class="uk-card uk-card-body">
+                                <p class="title">ALL-IN-ONE WEB SOLUTION</p>
+                                <p class="sub">EVOX is a comprehensive web design and hosting service provider which enables your organization to have an all-inclusive and fully managed web presence.</p>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-3@s uk-visible@m">
+                            <div class="uk-card uk-card-body"><img src="assets/images/servercloud.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-section uk-section-default" id="overview">
+                <div class="uk-container">
+                    <div class="uk-text-center@m" uk-grid>
+                        <div class="uk-width-1-3@m">
+                            <div>
+                                <span class="uk-margin-small-right" uk-icon="icon: code; ratio: 1.5"></span>
+                                <span class="overview-title">Web Design & Development</span>
+                            </div>
+                            <p class="overview-text">Mobile-friendly and fully responsive website design and development. Your website will always look great on every device and every browser.</p>
+                        </div>
+                        <div class="uk-width-1-3@m">
+                            <div>
+                                <span class="uk-margin-small-right" uk-icon="icon: server; ratio: 1.5"></span>
+                                <span class="overview-title">Premium Web Hosting</span>
+                            </div>
+                            <p class="overview-text">Industry-leading private servers turbocharge your website while providing unlimited bandwidth over a 40Gbps network.</p>
+                        </div>
+                        <div class="uk-width-1-3@m">
+                            <div>
+                                <span class="uk-margin-small-right" uk-icon="icon: settings; ratio: 1.5"></span>
+                                <span class="overview-title">Fully Managed</span>
+                            </div>
+                            <p class="overview-text">Complete management and maintenance of your entire website. From your domain name and email to your maintenance, security, and backups.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-container bundle-img"><img src="assets/images/bundle.png"></div>
+            </div>
+            <div class="uk-section uk-section-secondary" id="features">
+                <div class="uk-container">
+                    <div class="section-title">Features</div>
+                    <div class="section-subtitle">All-Inclusive Web Design, Development, and Hosting</div>
+                    <div class="star-sub">
+                        <img src="assets/images/star.png"> <img src="assets/images/star.png"> <img src="assets/images/star.png"> <img src="assets/images/star.png"> <img src="assets/images/star.png">
+                    </div>
+                    <div class="uk-text-center@m features-grid" uk-grid>
+                        <div class="features-single uk-width-1-3@s">
+                            <div>
+                                <img src="assets/images/features/responsive-design.svg" class="svg">
+                                <span class="features-title">Responsive Design</span>
+                            </div>
+                            <p class="features-text">Responsive and mobile-friendly website design ensures your website looks great on every device and every browser.</p>
+                        </div>
+                        <div class="features-single uk-width-1-3@s">
+                            <div>
+                                <img src="assets/images/features/hosting.svg" class="svg">
+                                <span class="features-title">Premium Web Hosting</span>
+                            </div>
+                            <p class="features-text">Unlimited traffic over a 40Gbps network. We do not limit your bandwidth or unique hits.</p>
+                        </div>
+                        <div class="features-single uk-width-1-3@s">
+                            <div>
+                                <img src="assets/images/features/harddisk.svg" class="svg">
+                                <span class="features-title">Optimal Hardware</span>
+                            </div>
+                            <p class="features-text">Industry-leading architecture and native-SSD’s ensure that your website performs optimally.</p>
+                        </div>
+                        <div class="features-single uk-width-1-3@s">
+                            <div>
+                                <img src="assets/images/features/domain-name.svg" class="svg">
+                                <span class="features-title">Domain Name w/ Privacy</span>
+                            </div>
+                            <p class="features-text">Each website includes a domain name, DNS management, and WHOIS privacy.</p>
+                        </div>
+                        <div class="features-single uk-width-1-3@s">
+                            <div>
+                                <img src="assets/images/features/security.svg" class="svg">
+                                <span class="features-title">SSL Certificate</span>
+                            </div>
+                            <p class="features-text">Managed SSL certificates encrypt traffic between your websites and its visitors.</p>
+                        </div>
+                        <div class="features-single uk-width-1-3@s">
+                            <div>
+                                <img src="assets/images/features/email.svg" class="svg">
+                                <span class="features-title">Personalized Email</span>
+                            </div>
+                            <p class="features-text">Personalized Email addresses for your website.</p>
+                        </div>
+                        <div class="features-single uk-width-1-3@s">
+                            <div>
+                                <img src=assets/images/features/backups.svg class="svg">
+                                <span class="features-title">Daily Backups</span>
+                            </div>
+                            <p class="features-text">Complete backups of your website and databases are taken daily; on-site and off-site backups.</p>
+                        </div>
+                        <div class="features-single uk-width-1-3@s">
+                            <div>
+                                <img src="assets/images/features/analytics.svg" class="svg">
+                                <span class="features-title">Analytics Integration</span>
+                            </div>
+                            <p class="features-text">Detailed insights about your visitors and their experience.</p>
+                        </div>
+                        <div class="features-single uk-width-1-3@s">
+                            <div>
+                                <img src="assets/images/features/seo.svg" class="svg">
+                                <span class="features-title">Search Engine Optimization</span>
+                            </div>
+                            <p class="features-text">Optimized code, latest standards, keywords, sitemap generation and search engine submission.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-section uk-section-default" id="ecommerce">
+                <div class="uk-container">
+                    <div class="section-title">We Specialize In Ecommerce</div>
+
+                    <div uk-grid>
+
+                        <div class="uk-width-1-1@s uk-width-1-3@m">
+                            <img src="assets/images/payment-integration.svg" class="uk-align-center">
+                        </div>
+
+                        <div class="uk-width-1-1@s uk-width-2-3@m evox-hidden-xs">
+                            <div class="ecommerce-checks uk-grid-small uk-child-width-1-3 uk-flex-center" uk-grid>
+                                <div>
+                                    <div class="uk-list-wrapper">
+                                        <ul class="uk-list uk-list-large">
+                                            <li><span uk-icon="icon: check"></span> Secure Payments</li>
+                                            <li><span uk-icon="icon: check"></span> Inventory Management</li>
+                                            <li><span uk-icon="icon: check"></span> Customer Reviews</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-list-wrapper">
+                                        <ul class="uk-list uk-list-large">
+                                            <li><span uk-icon="icon: check"></span> Invoicing</li>
+                                            <li><span uk-icon="icon: check"></span> Tax Calculations</li>
+                                            <li><span uk-icon="icon: check"></span> Shipping Integration</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-list-wrapper">
+                                        <ul class="uk-list uk-list-large">
+                                            <li><span uk-icon="icon: check"></span> Order History</li>
+                                            <li><span uk-icon="icon: check"></span> Coupons</li>
+                                            <li><span uk-icon="icon: check"></span> + More</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1 evox-visible-xs">
+                            <div class="ecommerce-checks uk-grid-small uk-child-width-1-2 uk-flex-center" uk-grid>
+                                <div>
+                                    <div class="uk-list-wrapper">
+                                        <ul class="uk-list uk-list-large">
+                                            <li><span uk-icon="icon: check"></span> Secure Payments</li>
+                                            <li><span uk-icon="icon: check"></span> Inventory Management</li>
+                                            <li><span uk-icon="icon: check"></span> Customer Reviews</li>
+                                            <li><span uk-icon="icon: check"></span> Invoicing</li>
+                                            <li><span uk-icon="icon: check"></span> Tax Calculations</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-list-wrapper">
+                                        <ul class="uk-list uk-list-large">
+                                            <li><span uk-icon="icon: check"></span> Shipping Integration</li>
+                                            <li><span uk-icon="icon: check"></span> Order History</li>
+                                            <li><span uk-icon="icon: check"></span> Coupons</li>
+                                            <li><span uk-icon="icon: check"></span> + More</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-section uk-section-primary" id="faq">
+                <div class="uk-container">
+                    <div class="section-title">Frequently Asked Questions</div>
+                    <div class="uk-grid-match uk-child-width-1-2@s uk-grid-small" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-body uk-card-default">
+                                <h3 class="uk-card-title">Can I use another hosting provider?</h3>
+                                <p>Absolutely. We will work with whichever web hosting provider you prefer. BlueHost and GoDaddy are popular choices.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-body uk-card-default">
+                                <h3 class="uk-card-title">So... WordPress?</h3>
+                                <p>WordPress websites are most commonly requested, and we understand why. WordPress is excellent for Ecommerce and large blogs. When it comes to WordPress, we're experts.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-body uk-card-default">
+                                <h3 class="uk-card-title">What do I need to get started?</h3>
+                                <p>A domain name and web hosting are all that is required. We can build your website locally and migrate it, or we can host it for you.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-body uk-card-default">
+                                <h3 class="uk-card-title">How much does it cost?</h3>
+                                <p>Our web design service starts at $400. Every website is different so get in touch with us today to discuss yours!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-section uk-section-default" id="contact">
+                <div class="uk-container">
+                    <div class="section-title">Get In Touch</div>
+                    <div class="uk-width-1-1">
+                        <div class="contact-map">
+                            <iframe allowfullscreen frameborder="0" height="450" src="https://google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.1063049670715!2d-73.75908124860275!3d42.84948847905473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89de13fa2db4d369%3A0x526c02506a7760cd!2s21+Corporate+Dr%2C+Clifton+Park%2C+NY+12065!5e0!3m2!1sen!2sus!4v1534513083076" style="border:0" width="600"></iframe>
+                        </div>
+                    </div>
+                    <div class="uk-grid-small uk-child-width-1-3@s uk-text-center" uk-grid>
+                        <div>
+                            <div class="uk-tile uk-tile-primary"><span class="uk-icon-button" uk-icon="icon: location"></span>
+                                <p>Capital District, NY</div>
+                        </div>
+                        <div>
+                            <div class="uk-tile uk-tile-primary"><span class="uk-icon-button" uk-icon="icon: mail"></span>
+                                <p><a href=mailto:support@ev0x.com>support@ev0x.com</a></div>
+                        </div>
+                        <div>
+                            <div class="uk-tile uk-tile-primary"><span class="uk-icon-button" uk-icon="icon: receiver"></span>
+                                <p>Email Initially</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-copyright">
+                <div class="uk-container">EVOX Consulting - 2023</div>
+            </div>
+        </footer>
+        <a href="#" id="scrollToTop" class="uk-icon-button uk-margin-small-right hide-from-print" uk-icon="icon: chevron-dup" uk-totop uk-scroll></a>
+        <script src="assets/js/uikit.min.js"></script>
+        <script src="assets/js/uikit-icons.min.js"></script>
+        <script src="assets/js/headroom.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <!-- <script src="assets/js/live-chat.js"></script> -->
+    </body>
+</html>
