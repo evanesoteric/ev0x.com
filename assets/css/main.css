@@ -57,7 +57,7 @@ header {
 }
 
 .header {
-    background-color: #fff;
+    background-color: #ffffff;
     border-bottom: 1px solid #e9e9e9;
 }
 
@@ -502,6 +502,53 @@ header {
     background: #4169e1;
     color: #fff;
 }
+
+
+/**************
+     Matrix
+ **************/
+.matrix-container {
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+}
+
+#matrix-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+}
+.matrix-overlay-section {
+  height: 60vh;
+  position: relative;
+}
+
+.matrix-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60vh;
+}
+/*.matrix-overlay h2 {*/
+/*  font-size: 2.46rem;*/
+/*  color: #f3f3f3;*/
+/*  line-height: 1;*/
+/*}*/
+
+.blinking-cursor {
+  user-select: none;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+.as-about-logo img {
+    min-width: auto;
+    max-height: 130px;
+    padding: 20px 0;
+}
+
 
 
 /*******************
